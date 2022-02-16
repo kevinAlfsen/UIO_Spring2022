@@ -2,7 +2,7 @@
 
 int main(void) {
 
-    printf("This is a demo\n");
+    printf("VowelShift\n");
 
     return 0;
 }
