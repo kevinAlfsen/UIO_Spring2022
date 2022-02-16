@@ -1,14 +1,14 @@
-CFLAGS = -
+CFLAGS = -std=gnu11 -g -Wall -Wextra
 
-SOURCE = vowelshift
+SOURCE = vowelshift stringoperations
 
 all: $(SOURCE)
 
 vowelshift: vowelshift.c
-	gcc $(CFLAG) vowelshift.c -o vowelshift
+	gcc $(CFLAGS) vowelshift.c -o vowelshift
 
-stringoperations: stringoperations.c test.c
-	gcc $(CFLAG) stringoperations.c test.c -o vowelshift
+stringoperations: tests.c stringoperations.c
+	gcc $(CFLAGS) tests.c stringoperations.c -o stringoperations
 
 clean:
 	rm -f

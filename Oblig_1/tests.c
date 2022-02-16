@@ -104,6 +104,6 @@ int main(void)
    test_stringsum2("Lorem ipsum dolor sit amet", 292);
    test_stringsum2("L0rem 1psum d0l0r s1t amet", -1);
    test_stringsum2("", 0);
-   
+
    return 0;
 }
