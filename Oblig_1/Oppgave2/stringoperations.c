@@ -94,7 +94,9 @@ char *string_between(char *s, char c) {
     case 0:
         return NULL;
     case 1: {
-        return malloc(0);
+        char* empty_string = malloc(sizeof(char));
+        *empty_string = '\0';
+        return empty_string;
     }
     default: {
         int new_string_length = last_occurence_idx - first_occurence_idx;

@@ -9,6 +9,3 @@ vowelshift: vowelshift.c
 
 stringoperations: tests.c stringoperations.c
 	gcc $(CFLAGS) tests.c stringoperations.c -o stringoperations
-
-clean:
-	rm -f
